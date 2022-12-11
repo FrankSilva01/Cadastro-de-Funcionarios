@@ -28,16 +28,16 @@ export default function Consulta(props) {
                 se for dígitado na pesquisa o nome igual ao do cadastro retornar os dados caso contrário retorna null */}
                 <ul key={nomes}>
                  <li>
-                     <h4 >{nome === nomes ? 'Nome do funcionário: ' + nome : null}</h4>
+                     <h4 >{nome === nomes ? 'Nome do funcionário: ' + nome : ''}</h4>
                       </li> 
                          <li>
-                           <p>{nome === nomes ? 'Cargo: ' + cargo : null} </p>
+                           <p>{nome === nomes ? 'Cargo: ' + cargo : ''} </p>
                             </li>
                               <li>
-                             <p>{nome === nomes ? 'Setor: ' + setor : null} </p>
+                             <p>{nome === nomes ? 'Setor: ' + setor : ''} </p>
                           </li>
                         <li>
-                     <p>{nome === nomes ? 'Salário: ' + salario : null} </p>
+                     <p>{nome === nomes ? 'Salário: ' + salario : ''} </p>
                   </li>
                 <li>
                     <NavLink to="/detalhes"  className={nome === nomes ? style.detalhesLink : null}>  Detalhes</NavLink>
