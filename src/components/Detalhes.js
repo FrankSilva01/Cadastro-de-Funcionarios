@@ -19,17 +19,13 @@ export default function Detalhes(props) {
        App.js com os valores digitados no input para passar as informações por props */}
     <h4>Nome:<p id="nome">{props.usuario[0]}</p></h4>
 
-       <h4>Cargo:</h4>
-    <p id="cargo" >{props.usuario[1]}</p>
+    <p id="cargo" ><strong>Cargo:<strong/> {props.usuario[1]}</p>
 
-      <h4>Setor:</h4>
-    <p id="setor">{props.usuario[2]}</p>
+    <p id="setor" ><strong>Setor:<strong/>{props.usuario[2]}</p>
 
-    <h4>Salário:</h4>
-    <p id="salario" >R$: {props.usuario[3]}</p>
+    <p id="salario" ><strong> Salário <strong/> R$: {props.usuario[3]}</p>
 
-    <h4>Status:</h4>
-    <p style={{color: 'green' }} >Ativo</p>
+    <p style={{color: 'green' }} ><strong> Status:<strong/>  Ativo</p>
 
      <NavLink to="/consulta" className={style.detalhesLink}>Voltar</NavLink>   {''}
       <NavLink to="/editardadosfuncionario" className={style.detalhesLink}>Editar</NavLink>   {''}
